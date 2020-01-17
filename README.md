@@ -1,4 +1,18 @@
 
+## LS - list directory contents
+
+#### File sorted by modification time
+`ls -lt` 
+
+`ls -ltr` for reverse 
+
+#### Hidden files but not the current(.) and parent directory(..)
+`ls -A`
+
+#### Display visual classification of files
+`ls -F` 
+
+`ls -FG` to color the output
 
 ## FIND - walk a file hierarchy
 
