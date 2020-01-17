@@ -1,4 +1,7 @@
 
+*In Unix, all 'core' applications can take text in, and output it. (i.e. pipes) e.g. ls -l | grep zip*
+
+
 ## LS - list directory contents
 
 #### File sorted by modification time
