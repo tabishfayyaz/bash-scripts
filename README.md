@@ -30,6 +30,8 @@
 #### Display full time information consistently for all files
 `ls -lT`
 
+## GREP - file pattern searcher
+
 ## FIND - walk a file hierarchy
 
 ### Find files that don’t have a certain string e.g. build
