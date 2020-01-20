@@ -17,6 +17,19 @@
 
 `ls -FG` to color the output
 
+#### Listing other directories
+`ls -l directoryname/`
+
+#### List just the directories in your working directory
+`ls -d */ ` */ forces the display of only items ending with a forward slash, which in this case would be a directory, even if     
+            the -F option of ls isn't used. -d keep it from finding all directories recursively 
+
+#### Comma separated list of files & directories
+`ls -m`
+
+#### Display full time information consistently for all files
+`ls -lT`
+
 ## FIND - walk a file hierarchy
 
 ### Find files that don’t have a certain string e.g. build
