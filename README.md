@@ -106,9 +106,6 @@ this is third line" | grep -e this -e second
 ### Delete all characters from a file
 `$ tr -d ','`
 
-## ADB - Android Debug Bridge
-### Take device screenshot
-`$ adb shell screencap -p | perl -pe 's/\x0D\x0A/\x0A/g' > screen.png`
 
 ## MAC - OSX
 ### See and delete recently installed .pkg files 
@@ -118,3 +115,6 @@ this is third line" | grep -e this -e second
 `$ ls -ltr`				recently installed files in sorted order
 
 `$ lsbom -fls <name-of-bom-file>`	list contents of bom file, you can use this list to manually delete the installed files
+
+## Links
+- Quick and Simple Introduction to the Vi Text Editor: http://heather.cs.ucdavis.edu/~matloff/UnixAndC/Editors/ViIntro.html
