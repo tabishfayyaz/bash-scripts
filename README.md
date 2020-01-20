@@ -32,6 +32,64 @@
 
 ## GREP - file pattern searcher
 
+#### case insensitive string search
+```
+echo “this is first line  
+> this is second line” | grep -i “second”
+```
+
+#### Print lines that don’t match search string
+```
+echo "this is first line
+> this is second line
+> this is third line" | grep -v "second"
+```
+
+#### Multiple filters on stdout
+`find . -name *.jar | grep -i SampleApplication | grep -i sdk`
+
+#### Display lines before or after search string, -A=after, -B=before, -C=after & before
+```
+ifconfig | grep -A 4 -i en0
+ifconfig | grep -B 2 -i en0
+```
+
+#### Count number of matches
+```
+echo "this is first line
+> this is second line
+> this is third line" | grep -c this
+```
+
+#### Search for entire pattern
+`ifconfig | grep -w RUNNING`
+
+#### Print relative line number of search string
+`ifconfig | grep -n en0`
+
+#### String search in all files under a directory
+`grep string -rn directoryName`
+
+#### String search within zip file
+`zipgrep -iw framework GamingSDK-iOS9-2.0.0.zip`
+
+### Print only matching search string
+```
+"this is first line
+this is second line
+this is third line" | grep -o this
+```
+
+#### Print multiple matching strings (substring1 OR substring1)
+```
+"this is first line
+this is second line
+this is third line" | grep -e this -e second
+```
+
+#### Print matching search string with color
+`$ grep --color <string> <path-to-file>`
+
 ## FIND - walk a file hierarchy
 
 ### Find files that don’t have a certain string e.g. build
